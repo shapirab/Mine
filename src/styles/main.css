@@ -1,0 +1,28 @@
+/* Card */
+.card{   
+    width: 300px;
+    height: 500px; 
+    box-shadow: -8px -10px 3.5px 4px rgb(151, 145, 22);
+    padding: 5rem 2.5rem;
+    background-color: rgb(171, 165, 48);
+} 
+
+.card h2{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn{
+    padding: 0.8rem 4.5rem;
+    border: none;
+    border-radius: 25px;
+    
+}
+
+.btn__card{
+    background-color: #000;
+    color: #fff;
+    font-size: 1.7rem;
+    letter-spacing: 0.6px;
+    text-transform: capitalize;
+}
