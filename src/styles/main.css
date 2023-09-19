@@ -1,3 +1,4 @@
+
 /* Card */
 .card{   
     width: 300px;
@@ -25,4 +26,43 @@
     font-size: 1.7rem;
     letter-spacing: 0.6px;
     text-transform: capitalize;
+}
+
+/* gallery-card */
+.gallery-card{
+    width: 100%;
+    height: 100%;
+    margin: 3rem;
+    background-position: center;
+    background-size: cover;
+    border-right: 2px solid rgba(200, 50, 30, 0.7);
+    border-bottom: 2px solid rgba(200, 50, 30, 0.7);
+    box-shadow: 5px 5px 4px #ccc, 8px 8px 5px rgba(200, 50, 30, 0.7);
+    position: relative;
+}
+
+.gallery-card:hover::before{
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gallery-card:hover::after{
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 2rem;
+    margin-top: 6rem;
+    width: 90%;
+    height: 2px;  
+    background-color: white;
+}
+
+.gallery-card__1{
+    background-image: url('../images/gallery-img-1.jpg');
 }
