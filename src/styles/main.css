@@ -32,16 +32,91 @@
 .gallery-card{
     width: 100%;
     height: 100%;
-    margin: 3rem;
-    background-position: center;
-    background-size: cover;
+    margin: 3rem;  
+    position: relative; 
+}
+
+.gallery__link{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery__link::before{
+    content: ''; 
+    position: absolute;
+    top: 10rem;
+    left: 1rem;
+    width: 90%;
+    height: 2px;  
+    /* z-index: 1; */
+    background-color: white;
+}
+
+.gallery__link::after{
+    content: ''; 
+    position: absolute;
+    /* opacity: 1; */
+    opacity: 0;
+    top: 3.5rem;
+    right: 10rem;
+    width: 0.25rem;
+    height: 80%;  
+    background-color: white; 
+}
+
+.gallery__link:hover::before {
+    z-index: 1;
+}
+
+.gallery__link:hover::after{
+    opacity: 1;
+}
+
+.gallery__link:hover .gallery__food-name{
+    visibility: visible;
+}
+
+.gallery__link:hover .gallery__food-description{
+    visibility: visible;
+}
+
+.gallery__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
     border-right: 2px solid rgba(200, 50, 30, 0.7);
     border-bottom: 2px solid rgba(200, 50, 30, 0.7);
     box-shadow: 5px 5px 4px #ccc, 8px 8px 5px rgba(200, 50, 30, 0.7);
-    position: relative;
 }
 
-.gallery-card:hover::before{
+.gallery__food-name{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 3rem;
+    color: #fff;
+    visibility: hidden;
+}
+
+.gallery__food-description{
+    position: absolute;
+    bottom: 10rem;
+    left: 2rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    width: 80%;
+    color: #fff;
+    visibility: hidden;
+}
+
+
+
+/* .gallery-card:hover::before{
     content: ''; 
     position: absolute;
     top: 0;
@@ -61,8 +136,16 @@
     width: 90%;
     height: 2px;  
     background-color: white;
-}
+} */
 
-.gallery-card__1{
-    background-image: url('../images/gallery-img-1.jpg');
-}
+/* .gallery-card:hover::before{
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 2rem;
+    margin-top: 6rem;
+    width: 2px;
+    height: 90%;  
+    background-color: white;
+} */
