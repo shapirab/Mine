@@ -14,3 +14,10 @@
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 5rem;
 }
+
+.l-container--primary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
