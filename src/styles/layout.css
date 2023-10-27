@@ -21,3 +21,9 @@
     justify-content: center;
     align-items: center;
 }
+
+.l-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
