@@ -157,3 +157,25 @@
 .cards{
     margin-top: 10rem;
 }
+
+/* nav item */
+.nav--item{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__header{
+    font-size: 3rem;
+    margin: 1.5rem 0.5rem;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+}
+
+/* icon */
+.icon__nav{
+    font-size: 5rem;
+}
+
