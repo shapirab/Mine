@@ -2,6 +2,7 @@
 :root{
     --background-color: #5a8fe6;
     --form-background-color: #324f7d;
+    --text-color: rgb(171, 165, 48);
 }
 
 body, html{
