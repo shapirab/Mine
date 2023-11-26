@@ -9,8 +9,139 @@
     <link rel="stylesheet" href="../styles/main.css">
     <title>Food Variety</title>
 </head>
-<body style="height: 150px;">
-    
+<body>
+    <section class="nav-bar">
+        <div class="nav--container">
+            <div class="nav--item">
+                <i class="fas fa-home icon__nav"></i>
+                <p class="nav__header">home</p>
+            </div>
+            <div class="nav--item">
+                <i class="fas fa-utensils icon__nav"></i>
+                <p class="nav__header">meals</p>
+            </div>
+            <div class="nav--item">
+                <i class="fas fa-hamburger icon__nav"></i>
+                <p class="nav__header">burger</p>
+            </div>
+            <div class="nav--item">
+                <i class="fas fa-pizza-slice icon__nav"></i>
+                <p class="nav__header">pizza</p>
+            </div>
+            <div class="nav--item">
+                <i class="fas fa-blender-phone icon__nav"></i>
+                <p class="nav__header">contact</p>
+            </div>
+        </div>
+    </section>
+    <section class="hero container l-container--primary">
+        <header class="header">
+            <h2>variety of foods</h2>
+        </header>
+        <div class="hero--icon-container hero__icon"></div>
+    </section>
+    <section class="container l-container--primary">
+        <header class="header">
+            <h2>popular meals</h2>
+        </header>
+        <section class="content cards l-cards">
+            <div class="card l-flex--column">
+                <img src="../images/card-img-1.png" alt="">
+                <h2>fish</h2>
+                <button class="btn btn__card">order now</button>
+            </div>
+            <div class="card l-flex--column">
+                <img src="../images/card-img-1.png" alt="">
+                <h2>fish</h2>
+                <button class="btn btn__card">order now</button>
+            </div>
+            <div class="card l-flex--column">
+                <img src="../images/card-img-1.png" alt="">
+                <h2>fish</h2>
+                <button class="btn btn__card">order now</button>
+            </div>
+        </section>
+    </section>
+    <section class="container l-container--primary">
+        <header class="header">
+            <h2>gallery</h2>
+        </header>
+        <section class="gallery content l-grid l-grid--gallery">
+            <div class="gallery-card">
+                <a href="#" class="gallery__link" title="Order Now">
+                    <img src="../images/gallery-img-1.jpg" alt="" class="gallery__img">
+                    <h3 class="gallery__food-name">Pancakes</h3>
+                    <p class="gallery__food-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Repudiandae, ducimus maxime doloremque porro dolorum incidunt!
+                    </p>
+                </a>
+            </div>
+            <div class="gallery-card">
+                <a href="#" class="gallery__link" title="Order Now">
+                    <img src="../images/gallery-img-2.jpg" alt="" class="gallery__img">
+                    <h3 class="gallery__food-name">Pancakes</h3>
+                    <p class="gallery__food-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Repudiandae, ducimus maxime doloremque porro dolorum incidunt!
+                    </p>
+                </a>
+            </div>
+            <div class="gallery-card">
+                <a href="#" class="gallery__link" title="Order Now">
+                    <img src="../images/gallery-img-3.jpg" alt="" class="gallery__img">
+                    <h3 class="gallery__food-name">Pancakes</h3>
+                    <p class="gallery__food-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Repudiandae, ducimus maxime doloremque porro dolorum incidunt!
+                    </p>
+                </a>
+            </div>
+            <div class="gallery-card">
+                <a href="#" class="gallery__link" title="Order Now">
+                    <img src="../images/gallery-img-4.jpg" alt="" class="gallery__img">
+                    <h3 class="gallery__food-name">Pancakes</h3>
+                    <p class="gallery__food-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Repudiandae, ducimus maxime doloremque porro dolorum incidunt!
+                    </p>
+                </a>
+            </div>
+            <div class="gallery-card">
+                <a href="#" class="gallery__link" title="Order Now">
+                    <img src="../images/gallery-img-5.jpg" alt="" class="gallery__img">
+                    <h3 class="gallery__food-name">Pancakes</h3>
+                    <p class="gallery__food-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Repudiandae, ducimus maxime doloremque porro dolorum incidunt!
+                    </p>
+                </a>
+            </div>
+            <div class="gallery-card">
+                <a href="#" class="gallery__link" title="Order Now">
+                    <img src="../images/gallery-img-6.jpg" alt="" class="gallery__img">
+                    <h3 class="gallery__food-name">Pancakes</h3>
+                    <p class="gallery__food-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Repudiandae, ducimus maxime doloremque porro dolorum incidunt!
+                    </p>
+                </a>
+            </div>
+        </section>
+    </section>
+    <footer class="footer">
+        <div class="footer__container l-cards">
+            <div class="footer__header">
+                <h2 class="footer__heading">sign me up</h2>
+                <p class="footer__body">be the first to know about new products</p>
+            </div>
+            <div class="footer__input">
+                <input type="text" class="footer__input-box" placeholder="Enter your email">
+                <button class="footer__input-btn"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </footer>
+    <div class="nav--btn"><span><i class="fas fa-bookmark"></i></span></div>
     <script type="module" src="../scripts/app.js"></script>
 </body>
 </html>

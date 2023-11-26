@@ -6,9 +6,9 @@ let heroIcons = ['\\f5d1', '\\f810', '\\f578', '\\f563', '\\f4d8', '\\f7fb', '\\
 let heroIndex = 0;
 
 //TODO: make active again when the navDisplayBtn exists in the html
-// navDisplayBtn.addEventListener('click', () =>{
-//     navDisplay.classList.toggle('active');
-// });
+navDisplayBtn.addEventListener('click', () =>{
+    navDisplay.classList.toggle('active');
+});
 
 setInterval(setHeroIcon, 4000);
 
